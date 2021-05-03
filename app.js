@@ -13,10 +13,6 @@ const app = express();
 app.use(express.json({ extended: false}));
 connectDB();
 
-app.get("/", (req, res) => {
-	res.send("Hello World");
-})
-
 app.post("/api/users", async (req, res) => {
 
 	const name = req.body.name;
