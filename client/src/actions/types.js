@@ -1,0 +1,10 @@
+export const REGISTER_USER = 'REGISTER_USER';
+export const GET_USER = 'GET_USER';
+export const LOGIN_USER = 'LOGIN_USER';
+export const GET_TEACHERS = 'GET_TEACHERS';
+export const GET_BOOKINGS = 'GET_BOOKINGS';
+export const ADD_BOOKING = 'ADD_BOOKING';
+export const LOG_OUT = 'LOG_OUT';
+export const LOGS_ERROR = 'LOGS_ERROR'
+export const SET_LOADING = 'SET_LOADING';
+export const FILTER = 'FILTER';

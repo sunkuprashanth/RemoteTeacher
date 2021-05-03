@@ -1,0 +1,4 @@
+{
+	"mongoURI": "mongodb+srv://prashanth:123654@cluster0.txxsh.mongodb.net/RemoteTeacher?retryWrites=true&w=majority",
+	"jwtSecret": "This is my secret for data."
+}
