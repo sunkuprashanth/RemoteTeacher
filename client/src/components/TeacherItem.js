@@ -11,11 +11,18 @@ function TeacherItem({teacher}) {
 		e.target.style.transform = 'scale(1)';
 	}
 
+	const onWheel = e => {
+		if (e.target.id){
+			e.target.style.transform = 'scale(1)';
+			console.log(e.target.id);
+		}
+	}
+
 	const setBox = {height: "400px"};
 	const setImage = {width:"150px", height:"150px"};
 	
 	return (
-		<div className="box bg-light card align-items-center text-center ml-5 mt-4 mb-4" style={setBox} onMouseLeave={onMouseOut} onMouseEnter={onMouseOver}>
+		<div className="box bg-light card align-items-center text-center ml-5 mt-4 mb-4" style={setBox} onWheel={onWheel} id={teacher.name} onMouseLeave={onMouseOut} onMouseEnter={onMouseOver}>
 			<img className="card-img-top rounded-circle mt-4 mb-2" style={setImage} src={teacher.image} />
 			<h4>{teacher.name}</h4>
 			<label>I teach <strong>{teacher.subject}</strong></label>

@@ -22,19 +22,19 @@ function Navbar({isAuthenticated, loadUser, logout}) {
 
 				{ isAuthenticated ? (
 					<Fragment>
-						<div className="col-lg-3 mr-5">
+						<div className="col-sm-3 mr-5">
 							<Link className="nav-link text-light" to="/bookings">Bookings</Link>
 						</div>
-						<div className="col-lg-3 ml-2">
+						<div className="col-sm-3 ml-2">
 							<Link className="text-dark btn bg-light" onClick={onLogout} to="/login">Logout</Link>
 						</div>
 					</Fragment>
 				) : (
 					<Fragment>
-						<div className="col-lg-3 mr-4">
+						<div className="col-sm-3 mr-4">
 							<Link className="nav-link text-light" to="/register">Register</Link>
 						</div>
-						<div className="col-lg-3 ml-2">
+						<div className="col-sm-3 ml-2">
 							<Link className="nav-link text-light" to="/login">Login</Link>
 						</div>
 					</Fragment>
