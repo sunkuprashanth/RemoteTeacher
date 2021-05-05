@@ -9,13 +9,14 @@ function Teachers({teachers, getTeachers}) {
 	}, []);
 	let i=0;
 	return (
-		<Fragment>
-			{teachers!==null && teachers.map( teacher => {
+		<div className="bigbox mt-5 pr-5">
+			{
+				teachers!==null && teachers.map( teacher => {
 				i++;
 				return <TeacherItem key={i} teacher={teacher} />
 				})
 			}
-		</Fragment>
+		</div>
 	)
 }
 

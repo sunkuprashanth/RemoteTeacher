@@ -4,9 +4,10 @@ import Teachers from './Teachers'
 
 function Home() {
 	return (
-		<div className="row mb-5">
+		<div className="mb-5">
 			<SearchBar />
-			<Teachers />
+			{<Teachers />
+			}
 		</div>
 	)
 }
